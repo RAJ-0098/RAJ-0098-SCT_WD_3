@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        
+        <div class="game-mode">
+            <button id="vsHuman">Player vs Player </button>
+            <button id="vsComputer">Player vs Computer</button>
+        </div>
+        
+        <div class="game-info">
+            <p id="status">Select game mode to start</p>
+            <button id="stats">Show Stats</button>
+            <div id="score" class="hidden">
+                <h3>Game Statistics</h3>
+                <div class="stats-section">
+                    <h4> X </h4>
+                    <p>Wins: <span id="player1 Wins">0</span></p>
+                    <p>Losses: <span id="player1 Losses">0</span></p>
+                    <p>Draws: <span id="player1 Draws">0</span></p>
+                </div>
+                <div class="stats-section">
+                    <h4> O </h4>
+                    <p>Wins: <span id="player2 Wins">0</span></p>
+                    <p>Losses: <span id="player2 Losses">0</span></p>
+                    <p>Draws: <span id="player2 Draws">0</span></p>
+                </div>
+                <div class="stats-section">
+                    <h4>Computer</h4>
+                    <p>Wins: <span id="computer Wins">0</span></p>
+                    <p>Losses: <span id="computer Losses">0</span></p>
+                    <p>Draws: <span id="computer Draws">0</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <button id="start" class="hidden">Start Game</button>
+        
+        <div class="board hidden" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        
+        <button id="reset" class="hidden">Reset Game</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
